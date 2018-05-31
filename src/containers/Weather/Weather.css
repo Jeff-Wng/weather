@@ -1,0 +1,57 @@
+.Weather {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+}
+
+.Weather h1 {
+    width: 100%;
+    text-align: center;
+    margin: 50px 0;
+}
+
+.Results {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+}
+
+.saveBtn{
+    display: block;
+    margin: 50px auto;
+    width: 75px;
+    height: 35px;
+    background-color: white;
+    border: 1px solid black;
+    outline: none;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.saveBtn:hover {
+    border: 1px solid rgb(48, 209, 48);
+    color: rgb(48, 209, 48);
+}
+
+.saveBtn:active {
+    border: 1px solid rgb(48, 209, 48);
+    color: white;
+    background-color: rgb(48, 209, 48);
+}
+
+.Error {
+    color: red;
+    text-transform: capitalize;
+}
+
+@media (max-width: 700px) {
+    .Results {
+        flex-flow: column;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .Error {
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,88 @@
+.SavedResults {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    border: 3px solid steelblue;
+    margin: 10px 0;
+    box-sizing: border-box;
+}
+
+.SavedResults button {
+    display: block;
+    margin: 0 auto 35px auto;
+    width: 75px;
+    height: 35px;
+    background-color: white;
+    border: 1px solid black;
+    outline: none;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.SavedResults button:hover {
+    border: 1px solid rgb(209, 47, 47);
+    color: rgb(209, 47, 47);
+}
+
+.SavedResults button:active {
+    border: 1px solid rgb(209, 47, 47);
+    background-color: rgb(209, 47, 47);
+    color: white;
+}
+
+.Header {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.Header h1 {
+    padding-left: 15px;
+}
+
+.arrowDown {
+    box-sizing: border-box;
+    height: 50px;
+    width: 50px;
+    margin-right: 35px;
+    border-style: solid;
+    border-color: steelblue;
+    border-width: 0px 1px 1px 0px;
+    transform: rotate(45deg);
+    transition: border-width 150ms ease-in-out;
+  }
+  
+  .arrowDown:hover {
+    border-bottom-width: 4px;
+    border-right-width: 4px;
+  }
+
+  .arrowUp {
+    box-sizing: border-box;
+    height: 50px;
+    width: 50px;
+    margin: 30px 35px 0 0;
+    border-style: solid;
+    border-color: steelblue;
+    border-width: 1px 0px 0px 1px;
+    transform: rotate(45deg);
+    transition: border-width 150ms ease-in-out;
+  }
+  
+  .arrowUp:hover {
+    border-top-width: 4px;
+    border-left-width: 4px;
+  }
+
+  .Info {
+      display: flex;
+      justify-content: space-around;
+  }
+
+  @media (max-width: 700px) {
+      .Info {
+          flex-flow: column;
+      }
+  }

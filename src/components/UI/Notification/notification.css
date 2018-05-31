@@ -1,0 +1,76 @@
+.Notification {
+    width: 20%;
+    height: 12%;
+    margin: 0 auto;
+    text-align: center;
+    border: 5px solid steelblue;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 25%;
+    z-index: 50;
+    background-color: #eee;
+    font-weight: bold;
+}
+
+.NavLink {
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    height: 35px;
+    padding-top: 15px;
+    background-color: #eee;
+    border: 5px solid steelblue;
+    outline: none;
+    font-weight: bold;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.NavLink:hover {
+    border: 1px solid steelblue;
+    color: steelblue;
+}
+
+.NavLink:active {
+    border: 1px solid steelblue;
+    background-color: steelblue;
+    color: #eee;
+}
+
+@media screen and (max-width: 900px) {
+    .Notification {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .Notification {
+        font-size: 15px;
+        height: 20%;
+    }
+
+    .NavLink {
+        width: 100px;
+        height: 40px;
+        font-size: 15px;
+    }    
+}
+
+@media screen and (max-width: 400px) {
+    .Notification {
+        font-size: 15px;
+        height: 20%;
+        width: 50%;
+    }
+
+    .NavLink {
+        width: 100px;
+        height: 40px;
+        font-size: 15px;
+    }    
+}
+
+

@@ -1,0 +1,119 @@
+.Auth {
+    width: 50%;
+    height: 100%;
+    margin: 0 auto 50px auto;
+    margin-top: 50px;
+}
+
+.Auth p {
+    text-align: center;
+}
+
+.Buttons {
+    display: flex;
+    width: 60%;
+    margin: 0 auto;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.Buttons h2 {
+    width: 100%;
+    margin: 0;
+    padding: 25px;
+    border-left: 1px solid #777;
+    border-right: 1px solid #777;
+    border-top: 1px solid #777;
+    border-bottom: 5px solid rgba(0, 0, 0, 0.3);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    transition: border-bottom 0.2s ease-out;
+}
+
+.Buttons h2:hover {
+    border-bottom: 5px solid steelblue;
+    color: steelblue;
+}
+
+.Buttons h2:active {
+    border-top: 1px solid steelblue;
+    border-right: 1px solid steelblue;
+    border-left: 1px solid steelblue;
+    border-bottom: 3px solid steelblue;
+    color: white;
+    background-color: steelblue;
+}
+
+.Info {
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 25px;
+    display: flex;
+    flex-flow: column;
+    border-left: 1px solid #777;
+    border-right: 1px solid #777;
+    border-bottom: 1px solid #777;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0 3px 0 rgba(0, 0, 0, 0.5);
+}
+
+.Info h3 {
+    text-align: center;
+}
+
+.Info input {
+    margin: 25px;
+    padding: 10px;
+    outline: none;
+    border: 1px solid black;
+}
+
+.Info input:focus {
+    border: 1px solid steelblue;
+}
+
+.Info button {
+    width: 20%;
+    margin: 15px auto 35px auto;
+    outline: none;
+    height: 50px;
+    width: 100px;
+    background-color: white;
+    border: 1px solid black;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.Info button:hover {
+    border: 3px solid steelblue;
+    color: steelblue;
+}
+
+.Info button:active {
+    background-color: steelblue;
+    border: 3px solid steelblue;
+    color: white;
+}
+
+@media (max-width: 960px) {
+    .Auth {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .Buttons,
+    .Info {
+        width: 90%;
+    }
+
+    .Buttons {
+        font-size: 12px;
+    }
+
+    .Info button {
+        font-size: 12px;
+    }
+}
